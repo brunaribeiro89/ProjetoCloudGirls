@@ -5,20 +5,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aula 05</title>
+    <link rel="stylesheet" href="../CSS/aula5.css">
 </head>
 <body>
     <h1>
         "Você esta em: JavaScript: Programando na linguagem da web"
     </h1>
 
-    <ul><h2>Semana 5 - 05/04/2021</h2>
+    <!--<ul><h2>Semana 5 - 05/04/2021</h2>
         <li>Entenda mais como funciona esta popular linguagem do mercado</li>
         <li>Aprenda a manipular os elementos de sua página</li>
         <li>Trabalhe bem com eventos do navegador</li>
         <li>Entenda como utilizar e validar formulários</li>
         <li>Conheça boas práticas de organização de código Javascript</li>
-        <li>Busque dados em outro servidor com AJAX</li>
+        <li>Busque dados em outro servidor com AJAX</li>-->
     <ul>
-
+        <main>
+            <section class="container">
+                   <h2>Cronograma</h2>
+                   <label class="filtro-conteudo" for="filtrar-tabela">Filtrar:</label>
+                   <input type="text" name="filtro" id="filtrar-tabela" placeholder="Digite o conteúdo da aula">
+               
+                   <table>
+                       <thead>
+                           <tr>
+                               <th>Cronograma Semanal</th>
+                           </tr>
+                       </thead>
+                       <tbody id="tabela-conteudos">
+                           <tr class="conteudo" >
+                               <td class="info-conteudo">Entenda mais como funciona esta popular linguagem do mercado</td>
+                           </tr>
+                           <tr class="conteudo" >
+                               <td class="info-conteudo">Aprenda a manipular os elementos de sua página</td>
+                           </tr>
+                           <tr class="conteudo" >
+                               <td class="info-conteudo">Trabalhe bem com eventos do navegador</td>
+                           </tr>
+                           <tr class="conteudo">
+                               <td class="info-conteudo">Entenda como utilizar e validar formulários</td>
+                           </tr>
+                           <tr class="conteudo" >
+                               <td class="info-conteudo">Conheça boas práticas de organização de código Javascript</td>
+                           </tr>
+                           <tr class="conteudo" >
+                            <td class="info-conteudo">Busque dados em outro servidor com AJAX</td>
+                        </tr>
+                       
+                       
+               
+                       </tbody>
+                   </table>
+           
+               </section>
+           </main>
+       
+           <section class="container">
+               <h2 id="titulo-form">Adicionar nova Aula</h2>
+               <ul id="mensagemErro"></ul>
+               <form id="form-adiciona">
+                       <div class="grupo">
+                               <label class="filtro-conteudo" for="conteudo">Conteúdo:</label>
+                               <input id="conteudo" name="conteudo" type="text" placeholder="digite o conteúdo da aula semanal" class="campo">
+                       </div>        
+       
+                       <button id="adicionar-conteudo" class="botao bto-principal">Adicionar</button>
+               </form>
+       </section>
+       
+       <script src="../JS/scriptAula5.js"></script>    
 </body>
 </html>

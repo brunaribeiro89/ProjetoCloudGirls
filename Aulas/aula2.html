@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Aula 02</title>
-    <link rel="stylesheet" href="aula2.css">
+    <link rel="stylesheet" href="../CSS/aula2.css">
 
 </head>
 <body>
@@ -14,13 +14,65 @@
         "Você esta em: Lógica de programação II: pratique com desenhos, animações e um jogo"
     </h1>
     
-    <ul><h2>Semana 2 - 15/03/2021</h2>
+    <!--<ul><h2>Semana 2 - 15/03/2021</h2>
         <li>Desenhando gráficos com Canvas</li>
         <li>Extraindo funções</li>
         <li>Interagindo com o usuário</li>
         <li>Movendo elementos: animações simples</li>
-        <li>Nosso primeiro jogo</li>
+        <li>Nosso primeiro jogo</li>-->
     </ul>
+
+    <main>
+        <section class="container">
+            <h2>Cronograma</h2>
+            <label class="filtro-conteudo" for="filtrar-tabela">Filtrar:</label>
+            <input type="text" name="filtro" id="filtrar-tabela" placeholder="Digite o conteúdo da aula">
+        
+            <table>
+                <thead>
+                    <tr>
+                        <th>Cronograma Semanal</th>
+                    </tr>
+                </thead>
+                <tbody id="tabela-conteudos">
+                    <tr class="conteudo" >
+                        <td class="info-conteudo">Desenhando gráficos com Canvas</td>
+                    </tr>
+                    <tr class="conteudo" >
+                        <td class="info-conteudo">Extraindo funções</td>
+                    </tr>
+                    <tr class="conteudo" >
+                        <td class="info-conteudo">Interagindo com o usuário</td>
+                    </tr>
+                    <tr class="conteudo">
+                        <td class="info-conteudo">Movendo elementos: animações simples
+                        </td>
+                     </tr>
+                    <tr class="conteudo" >
+                        <td class="info-conteudo">Nosso primeiro jogo</td>
+                   </tr>
+                
+         
+                </tbody>
+            </table>
+       
+        </section>
+    </main>
+
+    <section class="container">
+        <h2 id="titulo-form">Adicionar nova Aula</h2>
+        <ul id="mensagemErro"></ul>
+        <form id="form-adiciona">
+                <div class="grupo">
+                        <label class="filtro-conteudo" for="conteudo">Conteúdo:</label>
+                        <input id="conteudo" name="conteudo" type="text" placeholder="digite o conteúdo da aula semanal" class="campo">
+                </div>        
+
+                <button id="adicionar-conteudo" class="botao bto-principal">Adicionar</button>
+        </form>
+</section>
+
+<script src="../JS/scriptAula2.js"></script>
 
 </body>
 </html>

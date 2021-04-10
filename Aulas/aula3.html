@@ -1,26 +1,79 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Aula 03</title>
-    <link rel="stylesheet" href="aula3.css">
+        <title>Aula 03</title>
+        <link rel="stylesheet" href="../CSS/aula3.css">
 
-</head>
-<body>
-    <h1>
-        "Você esta em:HTML5 e CSS3 parte 1: A primeira página da Web"
-    </h1>
+    </head>
+    <body>
+        <h1>
+            "Você esta em:HTML5 e CSS3 parte 1: A primeira página da Web"
+        </h1>
 
-    <ul><h2>Semana 3 - 22/03/2021</h2>
-        <li>Marcação do primeiro texto</li>
-        <li>Separando o conteúdo e informações<li>
-        <li>Trabalhando com CSS</li>
-        <li>Estilizando imagens</li>
-        <li>Listas e divisões de conteúdo</li>
-        <li>Finalizando a página</li>
-     <ul>
-</body>
-</html>
+        <!--<ul><h2>Semana 3 - 22/03/2021</h2>
+            <li>Marcação do primeiro texto</li>
+            <li>Separando o conteúdo e informações</li>
+            <li>Trabalhando com CSS</li>
+            <li>Estilizando imagens</li>
+            <li>Listas e divisões de conteúdo</li>
+            <li>Finalizando a página</li>-->
+        <ul>
+        <main>
+            <section class="container">
+                    <h2>Cronograma</h2>
+                    <label class="filtro-conteudo" for="filtrar-tabela">Filtrar:</label>
+                    <input type="text" name="filtro" id="filtrar-tabela" placeholder="Digite o conteúdo da aula">
+                
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Cronograma Semanal</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tabela-conteudos">
+                            <tr class="conteudo" >
+                                <td class="info-conteudo">Marcação do primeiro texto</td>
+                            </tr>
+                            <tr class="conteudo" >
+                                <td class="info-conteudo">Separando o conteúdo e informações</td>
+                            </tr>
+                            <tr class="conteudo" >
+                                <td class="info-conteudo">Trabalhando com CSS</td>
+                            </tr>
+                            <tr class="conteudo">
+                                <td class="info-conteudo">Estilizando imagens</td>
+                            </tr>
+                            <tr class="conteudo" >
+                                <td class="info-conteudo">Listas e divisões de conteúdo</td>
+                            </tr>
+                            <tr class="conteudo" >
+                                <td class="info-conteudo">Finalizando a página</td>
+                            </tr>
+                        
+                
+                        </tbody>
+                    </table>
+            
+                </section>
+            </main>
+        
+            <section class="container">
+                <h2 id="titulo-form">Adicionar nova Aula</h2>
+                <ul id="mensagemErro"></ul>
+                <form id="form-adiciona">
+                        <div class="grupo">
+                                <label class="filtro-conteudo" for="conteudo">Conteúdo:</label>
+                                <input id="conteudo" name="conteudo" type="text" placeholder="digite o conteúdo da aula semanal" class="campo">
+                        </div>        
+        
+                        <button id="adicionar-conteudo" class="botao bto-principal">Adicionar</button>
+                </form>
+        </section>
+        
+        <script src="../JS/scriptAula3.js"></script>
+    </body>
+    </html>

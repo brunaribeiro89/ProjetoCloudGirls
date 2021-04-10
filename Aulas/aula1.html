@@ -1,92 +1,92 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/aula1.css">
-    <title>Aula 01</title>
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../CSS/aula1.css">
+        <title>Aula 01</title>
 
-</head>
-<body>
-    <h1>
-        "Você esta em: Lógica de programação I: Os primeiros programas com Javascript e HTML."
-    </h1>
+    </head>
+    <body>
+        <h1>
+            "Você esta em: Lógica de programação I: Os primeiros programas com Javascript e HTML."
+        </h1>
 
-    <ul> <h2>Semana 1 - 08/03/2021 </h2>
-        <li>Comece a Programar Hoje</li>
-        <li>Comunique-se com o usuário</li>
-        <li>Torne seu programa dinâmico com variáveis</li>
-        <li>Crie suas próprias funcionalidades</li>
-        <li>Pratique resolvendo problemas do seu dia a dia</li>
-        <li>Execute códigos diferentes dependendo da condição</li>
-        <li>Repita Tarefas</li>
-        <li>Interaja de maneira diferente com o usuário</li>
-        <li>Trabalhe com muitos dados</li>
-    </ul>
+       <!--<ul> <h2>Semana 1 - 08/03/2021 </h2>
+            <li>Comece a Programar Hoje</li>
+            <li>Comunique-se com o usuário</li>
+            <li>Torne seu programa dinâmico com variáveis</li>
+            <li>Crie suas próprias funcionalidades</li>
+            <li>Pratique resolvendo problemas do seu dia a dia</li>
+            <li>Execute códigos diferentes dependendo da condição</li>
+            <li>Repita Tarefas</li>
+            <li>Interaja de maneira diferente com o usuário</li>
+            <li>Trabalhe com muitos dados</li>-->
+        </ul>
 
-    <main>
-        <section class="container">
-            <h2>Cronograma</h2>
-            <label class="filtro-conteudo" for="filtrar-tabela">Filtrar:</label>
-            <input type="text" name="filtro" id="filtrar-tabela" placeholder="Digite o conteúdo da aula">
+        <main>
+            <section class="container">
+                <h2>Cronograma</h2>
+                <label class="filtro-conteudo" for="filtrar-tabela">Filtrar:</label>
+                <input type="text" name="filtro" id="filtrar-tabela" placeholder="Digite o conteúdo da aula">
+            
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Cronograma Semanal</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabela-conteudos">
+                        <tr class="conteudo" >
+                            <td class="info-conteudo">Comece a Programar Hoje</td>
+                        </tr>
+                        <tr class="conteudo" >
+                            <td class="info-conteudo">Comunique-se com o usuário</td>
+                        </tr>
+                        <tr class="conteudo" >
+                            <td class="info-conteudo">Torne seu programa dinâmico com variáveis</td>
+                        </tr>
+                        <tr class="conteudo">
+                            <td class="info-conteudo">Crie suas próprias funcionalidades</td>
+                        </tr>
+                        <tr class="conteudo" >
+                            <td class="info-conteudo">Pratique resolvendo problemas do seu dia a dia</td>
+                    </tr>
+                    <tr class="conteudo" >
+                            <td class="info-conteudo">Execute códigos diferentes dependendo da condição</td>
+                    </tr>
+                    <tr class="conteudo" >
+                        <td class="info-conteudo">Repita Tarefas</td>
+                    </tr>
+                    <tr class="conteudo" >
+                        <td class="info-conteudo">Interaja de maneira diferente com o usuário</td>
+                    </tr>
+                    <tr class="conteudo" >
+                        <td class="info-conteudo">Trabalhe com muitos dados</td>
+                    </tr>
+                        
+                    
+                        
+                    </tbody>
+                </table>
         
-            <table>
-                <thead>
-                    <tr>
-                        <th>Cronograma Semanal</th>
-                    </tr>
-                </thead>
-                <tbody id="tabela-conteudos">
-                    <tr class="conteudo" >
-                        <td class="info-conteudo">Comece a Programar Hoje</td>
-                    </tr>
-                    <tr class="conteudo" >
-                        <td class="info-conteudo">Comunique-se com o usuário</td>
-                    </tr>
-                    <tr class="conteudo" >
-                        <td class="info-conteudo">Torne seu programa dinâmico com variáveis</td>
-                    </tr>
-                    <tr class="conteudo">
-                        <td class="info-conteudo">Crie suas próprias funcionalidades</td>
-                     </tr>
-                    <tr class="conteudo" >
-                        <td class="info-conteudo">Pratique resolvendo problemas do seu dia a dia</td>
-                   </tr>
-                   <tr class="conteudo" >
-                        <td class="info-conteudo">Execute códigos diferentes dependendo da condição</td>
-                   </tr>
-                   <tr class="conteudo" >
-                    <td class="info-conteudo">Repita Tarefas</td>
-                   </tr>
-                   <tr class="conteudo" >
-                    <td class="info-conteudo">Interaja de maneira diferente com o usuário</td>
-                   </tr>
-                   <tr class="conteudo" >
-                    <td class="info-conteudo">Trabalhe com muitos dados</td>
-                   </tr>
-                    
-                   
-                    
-                </tbody>
-            </table>
-       
-        </section>
-    </main>
+            </section>
+        </main>
 
-    <section class="container">
-        <h2 id="titulo-form">Adicionar nova Aula</h2>
-        <ul id="mensagemErro"></ul>
-        <form id="form-adiciona">
-                <div class="grupo">
-                        <label class="filtro-conteudo" for="conteudo">Conteúdo:</label>
-                        <input id="conteudo" name="conteudo" type="text" placeholder="digite o conteúdo da aula semanal" class="campo">
-                </div>        
+        <section class="container">
+            <h2 id="titulo-form">Adicionar nova Aula</h2>
+            <ul id="mensagemErro"></ul>
+            <form id="form-adiciona">
+                    <div class="grupo">
+                            <label class="filtro-conteudo" for="conteudo">Conteúdo:</label>
+                            <input id="conteudo" name="conteudo" type="text" placeholder="digite o conteúdo da aula semanal" class="campo">
+                    </div>        
 
-                <button id="adicionar-conteudo" class="botao bto-principal">Adicionar</button>
-        </form>
-</section>
+                    <button id="adicionar-conteudo" class="botao bto-principal">Adicionar</button>
+            </form>
+    </section>
 
-<script src="../JS/scriptAula1.js"></script>
-</body>
-</html>
+    <script src="../JS/scriptAula1.js"></script>
+    </body>
+    </html>
